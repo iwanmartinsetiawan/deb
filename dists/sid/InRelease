@@ -1,0 +1,56 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: https://skyfleet.github.io/archlinuxarm
+Label: https://skyfleet.github.io/archlinuxarm
+Codename: sid
+Date: Mon, 07 Sep 2020 22:34:11 UTC
+Architectures: amd64 arm64 armhf
+Components: main
+Description: lorem ipsum dolor sit amet!
+MD5Sum:
+ 9852d5dd5be210036f26a5db883af863 409 main/binary-amd64/Packages
+ b571fe14477ada4022ecaa7e609f3c58 316 main/binary-amd64/Packages.gz
+ 9bd05f349e49afec526d31efc2ffb5df 172 main/binary-amd64/Release
+ 8e9d3a3a936ab54768488187d12066d1 409 main/binary-arm64/Packages
+ c27af38ad31856d6aefa7d4abef401e9 316 main/binary-arm64/Packages.gz
+ 64ea6bc2f072e5f33313a6602c20ed2b 172 main/binary-arm64/Release
+ 88adffbc67ac04c7883296574ae7eaee 409 main/binary-armhf/Packages
+ 4dc84e6d35f88df7a4e62cd43da3a04e 317 main/binary-armhf/Packages.gz
+ a1fcc29a2073f205206090fea7a35b84 172 main/binary-armhf/Release
+SHA1:
+ b3a3bf2a17105888b57ed5340fbefc85a9b96ef8 409 main/binary-amd64/Packages
+ 52834a0c0045ddc235878edac9dce15bb942538f 316 main/binary-amd64/Packages.gz
+ 8c83f25c9caef978cc23b9601fdc2497eed26730 172 main/binary-amd64/Release
+ 70fd2eaa92bdf817cd52b22f427718026ef86408 409 main/binary-arm64/Packages
+ 594575c02e7d94f0cae67a34cc4cc24038c923f3 316 main/binary-arm64/Packages.gz
+ 04c8c6bc7e9ed9343a33b0354ae492ad7c103770 172 main/binary-arm64/Release
+ 6592cdbaa01a2a2287c08edb2265f8abc9a7a9d2 409 main/binary-armhf/Packages
+ e9e78dfb430f7f0e5ea272606c5c548415986335 317 main/binary-armhf/Packages.gz
+ 47985916751cb87aa26b25965a0fd020976655b2 172 main/binary-armhf/Release
+SHA256:
+ d2de26e7fcc57020f495890934ba4b10746d088c29fb559a36c6a049140a131c 409 main/binary-amd64/Packages
+ 983fe22cd1a3731dbec5a0d568771fd142ff239bc6b03c0a86b4aaa89f60e722 316 main/binary-amd64/Packages.gz
+ 2800eb4f6271ce9035f62bada6ab7457002731b8a30a139b018b7708f5081b08 172 main/binary-amd64/Release
+ aedf2be5a42282dbd6694b499893e4b61c5cd9dcb1336c858004040e83647db2 409 main/binary-arm64/Packages
+ 3cf7f4fc6766e6e5042b69bb915f3073191f81eae8d960de9f0e93fb005f3dbf 316 main/binary-arm64/Packages.gz
+ 830d3e8552a77c222c757b6119db2936e7477b24dd275fbb0b5bb56712b7b3d9 172 main/binary-arm64/Release
+ e15deb27173b879abcd115f6b5d01837414f2d6bd513876e886818a646cc9185 409 main/binary-armhf/Packages
+ 8b46cb78ab0f5ab8e3bef7c2d74c919994ea5e7e2c3187e7d68e798cb23cace8 317 main/binary-armhf/Packages.gz
+ bd49ac90995ff5efa97542f0ddb89a18e5dd7de13a1ed4de90f0da9ca012a593 172 main/binary-armhf/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEE3gj5JO7pODLavGQsqNx2GxwMDPwFAl9WtWMACgkQqNx2GxwM
+DPzo/BAAjJeyKomHIamm2kUIhFh/JBSS7DlYh7e0ipNL0m/9cIQFsaYeD44ya4Yf
+aMynjPBniT6YalqBP5FSSY2Zm8umvSznu9+7BUe1f5kEtUfKuEO/gdrEs7NM7R7N
+KeAkSQcKTTAF8Z81/L5OrgD2GWkBUZ9mzUlaXCigZdEhTNjmv+sNjuwS+a21Y3iC
+azDr5ZUqQEfrp3fVwE256pL534NvKbg4e6tsDIVn2xkpdGqelRZBhvebeKhi0DIK
+6cxNCYT3gOiskF2anBrFQtaU3oqicXjJSce4gQWi7nSdPdFtjGgwdqUmU3qOIP03
+ZbFldh7w0nxVRW9KFbzp4X/umWP6OVrt9y4c9ja9Ar0a4PoYywj7/NCNCohfbTSH
+f7iTrtVJ9qA2Uck32W64R+oxi9gnojfkXp5s4wU98qZO14LbO+Ku9RRIaF8oQfGN
+dsB7EjiTNbPzanQi5j+B8C3NlIev/8R6x0IMb53A1UJccOr7IIl2RaCz4PSkAaEL
+av1orHXNJoI4UWOwVmJ7d7rtkaTnRWSm/TPuQjLU7qRkih2vg0JQ+c9IM6pTyE/h
+TshvX1DF2GdWU/Jf2j+zVH+xcRLdlaCfFMcesoUrXz74mt1OdYYgnahCbwQc7z7t
+eGVlmcHiOn8GJ2bTxKHtDwg6hHvchPvzx3ktToJQLwlQpB21WxM=
+=VwV7
+-----END PGP SIGNATURE-----

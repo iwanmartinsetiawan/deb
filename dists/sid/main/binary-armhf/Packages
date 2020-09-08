@@ -1,0 +1,14 @@
+Package: skywire
+Version: 0.2.3-5
+Architecture: armhf
+Depends: 
+Maintainer: Skyfleet
+Priority: optional
+Section: web
+Filename: pool/main/s/skywire/skywire_0.2.3-5_armhf.deb
+Size: 24756144
+SHA256: ed922b342deb53c39527d42977a5f6d2277b9a928c8b1323e2fc9e288870e40b
+SHA1: 03698f11c328be7278a9def9ab32c32f91e466cb
+MD5sum: e51efc8342c9bd7847f36f5420e0112a
+Description: Skywire: Building a New Internet. Skycoin.com
+
