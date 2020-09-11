@@ -1,6 +1,6 @@
 [This Repository](https://github.com/skyfleet/armbian) contains [Skybian](https://github.com/skycoin/skybian) and Skyraspbian images which have been modified with a package-based [Skywire](https://github.com/SkycoinProject/skywire-mainnet) installation.
 
-This repository acts as a debian package repository which can be used by adding  configured in `/etc/apt/sources.list`
+[This Repository](https://skyfleet.github.io/armbian) acts as a debian package repository which can be used by adding  configured in `/etc/apt/sources.list`
 
 **NOTE: THE REPOSITORY HAS ALREADY BEEN CONFIGURED AND THE SKYWIRE PACKAGE HAS BEEN INSTALLED IN THE RELEASE IMAGES**
 
