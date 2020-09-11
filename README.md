@@ -7,7 +7,7 @@ These images are updated as new upstream versions are released:
 * Download [skyfleet_skybian_v0.1.2-1](https://github.com/Skyfleet/armbian/releases/download/images/skyfleet_skybian_v0.1.2-1.img.tar.gz) for orange pi prime
 * Download [skyfleet-skyraspbian-v0.1.2-1](https://github.com/Skyfleet/armbian/releases/download/images/skyfleet-skyraspbian-v0.1.2-1.img.tar.gz) for rpi3 / rpi4
 
-NOTE: The skywire package has been installed over the existing skywire installation (of skybian and skyraspbian). The release images _can be used with skyimager_ in order to generate fully configured ip-preset images; refer to the [skyimager user guide](https://github.com/skycoin/skywire/wiki/Skyimager-User-Guide] in the skywire wiki for details on using skyimager and writing an image to a microSD card.
+NOTE: The skywire package has been installed over the existing skywire installation (of skybian and skyraspbian). The release images _can be used with skyimager_ in order to generate fully configured ip-preset images; refer to the [skyimager user guide](https://github.com/skycoin/skywire/wiki/Skyimager-User-Guide) in the skywire wiki for details on using skyimager and writing an image to a microSD card.
 
 These images may also be used on their own with additional manual configuration (see step 4).
 
