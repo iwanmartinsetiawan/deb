@@ -1,4 +1,4 @@
-The [release section](https://github.com/Skyfleet/armbian/releases) of [this repository](https://github.com/skyfleet/armbian) contains [Skybian](https://github.com/skycoin/skybian) and [Skyraspbian](https://github.com/asxtree/skybian/tree/skyraspbian) images which have been modified with a package-based [Skywire](https://github.com/SkycoinProject/skywire-mainnet) installation.
+The [release section](https://github.com/Skyfleet/armbian/releases) of [this repository](https://github.com/skyfleet/armbian) contains [Skybian](https://github.com/skycoin/skybian) and [Skyraspbian](https://github.com/asxtree/skybian/tree/skyraspbian) images which have been modified with a package-based [Skywire](https://github.com/skycoin/skywire) installation.
 
 [This Repository](https://skyfleet.github.io/armbian) acts as a debian package repository which can be used to install skywire on .deb based systems of supported architectures (amd64 arm64 armhf)
 
