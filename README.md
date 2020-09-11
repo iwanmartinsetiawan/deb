@@ -1,12 +1,12 @@
-[This Repository](https://github.com/skyfleet/armbian) contains [Skybian](https://github.com/skycoin/skybian) and Skyraspbian images which have been modified with a package-based [Skywire](https://github.com/SkycoinProject/skywire-mainnet) installation.
+The [release section](https://github.com/Skyfleet/armbian/releases) of [This Repository](https://github.com/skyfleet/armbian) contains [Skybian](https://github.com/skycoin/skybian) and [Skyraspbian](https://github.com/asxtree/skybian/tree/skyraspbian) images which have been modified with a package-based [Skywire](https://github.com/SkycoinProject/skywire-mainnet) installation.
 
-[This Repository](https://skyfleet.github.io/armbian) acts as a debian package repository which can be used by adding  configured in `/etc/apt/sources.list`
+[This Repository](https://skyfleet.github.io/armbian) acts as a debian package repository which can be used to install skywire on .deb based systems of supported architectures (amd64 arm64 armhf)
 
 **NOTE: THE REPOSITORY HAS ALREADY BEEN CONFIGURED AND THE SKYWIRE PACKAGE HAS BEEN INSTALLED IN THE RELEASE IMAGES**
 
-**PLEASE DO NOT DO THE FOLLOWING STEPS IF YOU ARE USING A RELEASE IMAGE**
+NOTE: The skywire package has been installed over the existing skywire installation (of skybian and skyraspbian). The release images _can be used with skyimager_ in order to generate fully configured ip-preset images, or used on their own with additional manual configuration (see step 4).
 
-NOTE: because the skywire package has been installed over the existing skywire installation in skybian and skyraspbian, the release images can be used with skyimager in order to generate fully configured ip-preset images.
+**PLEASE DO NOT DO THE FOLLOWING STEPS IF YOU ARE USING A RELEASE IMAGE**
 
 ## To Use This Package Repository (with an existing debian system) -
 
