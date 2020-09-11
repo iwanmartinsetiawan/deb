@@ -1,11 +1,12 @@
 [This Repository](https://github.com/skyfleet/armbian) contains [Skybian](https://github.com/skycoin/skybian) and Skyraspbian images which have been modified with a package-based [Skywire](https://github.com/SkycoinProject/skywire-mainnet) installation.
 
-This repository acts as a debian package repository which can be configured in `/etc/apt/sources.list`
+This repository acts as a debian package repository which can be used by adding  configured in `/etc/apt/sources.list`
 
 **NOTE: THE REPOSITORY HAS ALREADY BEEN CONFIGURED AND THE SKYWIRE PACKAGE HAS BEEN INSTALLED IN THE RELEASE IMAGES**
+
 **PLEASE DO NOT DO THE FOLLOWING STEPS IF YOU ARE USING A RELEASE IMAGE**
 
-NOTE: because the skywire package has been installed over the existing skywire installation in skybian and skyraspbian, the release images can be used with skyimager in order to generate fully configured release images with static ip addresses.
+NOTE: because the skywire package has been installed over the existing skywire installation in skybian and skyraspbian, the release images can be used with skyimager in order to generate fully configured ip-preset images.
 
 ## To Use This Package Repository (with an existing debian system) -
 
@@ -51,9 +52,9 @@ apt update
 apt install skywire
 ```
 
-At the point you have completed step 4, skywire is installed.
+At the point you have completed the above, skywire is installed.
 
-However, you must still create and configure the skywire-hypervisor and skywire-visor .json files
+**However**, you must still create and edit the skywire-hypervisor and skywire-visor .json files
 
 These files **must** be at the following paths for the included skywire-visor and skywire-hypervisor systemd services to work.
 ```
@@ -66,13 +67,9 @@ or ask in [the skywire telegram channel](https://t.me/skywire)
 
 When you have completed the configuration, start the hypervisor and/or visor systemd service, then view the hypervisor's web interface to make sure everything worked.
 
-Step 5 has been removed pending revisions
-
-### 6) Updating your system and the skywire installation.
+### 5) Updating your system and the skywire installation.
 (as root)
 ```
 apt update
 apt upgrade
 ```
-
-if you have followed the steps on this page, your operating system and the skywire installation will be updated if any more recent packages are available than your currently installed ones.
