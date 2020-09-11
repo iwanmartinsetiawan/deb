@@ -86,3 +86,5 @@ When you have completed the configuration, start the hypervisor and/or visor sys
 apt update
 apt upgrade
 ```
+
+**PLEASE DO NOT USE THE UPDATE BUTTON IN THE HYPERVISOR UI**
