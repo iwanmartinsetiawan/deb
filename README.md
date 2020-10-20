@@ -16,15 +16,20 @@ These images may also be used on their own with additional manual configuration 
 **NOTE: THE REPOSITORY HAS ALREADY BEEN CONFIGURED AND THE SKYWIRE PACKAGE HAS BEEN INSTALLED IN THE RELEASE IMAGES**
 
 **NOTE: THE PACKAGE REPOSITORY DOES NOT WORK IN CHINA**
+
 **注意：包裹存放区在中国不起作用**
 
 Users inside China can download and install the package like this:
+
 ( 中国境内的用户可以像这样下载并安装软件包 )
+
 ```
 wget -O skywire_0.3.0-1_arm64.deb https://github.com/Skyfleet/armbian/blob/master/pool/main/s/skywire/skywire_0.3.0-1_arm64.deb?raw=true
 dpkg -i skywire_0.3.0-1_arm64.deb
 ```
+
 Remember, you will not have access to automatic updates
+
 ( 请记住，您将无权访问自动更新 )
 
 [This Repository](https://skyfleet.github.io/armbian) acts as a debian package repository which can be used to install skywire on .deb based systems of supported architectures (amd64 arm64 armhf)
