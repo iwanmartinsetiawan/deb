@@ -5,13 +5,13 @@ _pkgarch=amd64
 pkgname=skywire-bin
 _pkgname=skywire
 _pkgname1=skywire-mainnet
-_githuborg=SkycoinProject
+_githuborg=${projectname}
 pkgdesc="Skywire: Building a New Internet. Skycoin.com"
-_pkgver1='0.2.3'
-_tag_ver='v0.2.3'
+_pkgver1='0.3.0'
+_tag_ver='v0.3.0'
 pkgver=${_pkgver1//-/.}
 _pkggopath="github.com/${_githuborg}/${_pkgname1}"
-pkgrel=5
+pkgrel=1
 arch=('any')
 url="https://${_pkggopath}"
 license=()
@@ -21,20 +21,21 @@ depends=()
 _debdeps=""
 provides=(skywire)
 _release_url=("${url}/releases/download/${_tag_ver}/${_pkgname}-${_tag_ver}")
+
 source=("${_release_url}-linux-${_pkgarch}.tar.gz"
 #"postinst.sh"
 'skywire-hypervisor.service'
 'skywire-visor.service'
 'certificate.cnf'
-'generate.sh'
-'readonlycache.go')
-sha256sums=('985711605361caf7ddd24e82a632d56cfb33252afbc5e1740a54c4db7048a455'
+'generate.sh')
+#'readonlycache.go')
+sha256sums=('dffd28740b051bf07764fa254bf2be15a56dfd6390860541f660aef03fe71856'
 #            '4f0d45eee6050871875011618e0ba989d723c18108e8c996a76d47fba24ec2fb'
             '99a01866a21a02b7c972262cb054da718419d4e8d37dcd36cefbb5b17d877867'
             'd891297b28463e9ac8f765a95fc1d0488b51d01f47692a7aa62a3ac0baa443ac'
             'eafd78dd0cc9875eabac1017478d4f06361abf2021bd94ad052056284f7bb3d9'
-            '7c7e7713c14a949f44faac18c3badee87e3c99987aaaa28a6ebef5022dd13f86'
-            'a44f65d1d3b218512556d8a4a44fbe9c65f4d64cc699859157aa9568cee5422e')
+            '7c7e7713c14a949f44faac18c3badee87e3c99987aaaa28a6ebef5022dd13f86')
+#            'a44f65d1d3b218512556d8a4a44fbe9c65f4d64cc699859157aa9568cee5422e')
 
 [[ $_pkgarch == "amd64" ]] && _buildwith=(env GOOS=linux GOARCH=amd64)
 [[ $_pkgarch == "arm64" ]] && _buildwith=(env GOOS=linux GOARCH=arm64)
@@ -47,7 +48,7 @@ mv hypervisor ${_pkgname}-hypervisor
 #create read only cache binary
 #export GOOS=linux
 #export GOARCH=arm64
-${_buildwith} go build readonlycache.go
+#${_buildwith} go build readonlycache.go
 
 #create control file for the debian package
 echo "Package: skywire" > ${srcdir}/control
@@ -86,7 +87,7 @@ ln -rTsf ${_pkgdir}/usr/lib/skycoin/skywire/ssl/generate.sh ${_pkgdir}/usr/bin/s
 install -Dm644 ${srcdir}/certificate.cnf ${_pkgdir}/usr/lib/skycoin/skywire/ssl/certificate.cnf
 
 #install the readonly-cache binary
-install -Dm755 ${srcdir}/readonlycache ${_pkgdir}/usr/bin/readonlycache
+#install -Dm755 ${srcdir}/readonlycache ${_pkgdir}/usr/bin/readonlycache
 
 #install the control file and postinst script for the debian package
 install -Dm755 ${srcdir}/control ${_pkgdir}/DEBIAN/control
