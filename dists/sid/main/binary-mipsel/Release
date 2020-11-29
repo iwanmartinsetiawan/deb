@@ -1,5 +1,5 @@
 Component: main
 Origin: localhost
 Label: localhost
-Architecture: armhf
+Architecture: mipsel
 Description: lorem ipsum dolor sit amet!

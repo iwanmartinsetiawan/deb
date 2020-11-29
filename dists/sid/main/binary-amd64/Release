@@ -1,5 +1,5 @@
 Component: main
-Origin: https://skyfleet.github.io/archlinuxarm
-Label: https://skyfleet.github.io/archlinuxarm
+Origin: localhost
+Label: localhost
 Architecture: amd64
 Description: lorem ipsum dolor sit amet!

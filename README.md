@@ -1,19 +1,4 @@
-## Release Images
-
-The [release section](https://github.com/Skyfleet/armbian/releases) of [this repository](https://github.com/skyfleet/armbian) contains [Skybian](https://github.com/skycoin/skybian) and [Skyraspbian](https://github.com/asxtree/skybian/tree/skyraspbian) images which have been modified with a package-based [Skywire](https://github.com/skycoin/skywire) installation.
-
-These images are updated as new upstream versions are released:
-
-* Download [skyfleet_skybian_v0.1.2-1](https://github.com/Skyfleet/armbian/releases/download/images/skyfleet_skybian_v0.1.2-1.img.tar.gz) for orange pi prime
-* Download [skyfleet-skyraspbian-v0.1.2-1](https://github.com/Skyfleet/armbian/releases/download/images/skyfleet-skyraspbian-v0.1.2-1.img.tar.gz) for rpi3 / rpi4
-
-NOTE: The skywire package has been installed over the existing skywire installation (of skybian and skyraspbian). The release images _can be used with skyimager_ in order to generate fully configured ip-preset images; refer to the [skyimager user guide](https://github.com/skycoin/skywire/wiki/Skyimager-User-Guide) in the skywire wiki for details on using skyimager and writing an image to a microSD card.
-
-These images may also be used on their own with additional manual configuration (see step 4).
-
 ## Package Repository
-
-**NOTE: THE REPOSITORY HAS ALREADY BEEN CONFIGURED AND THE SKYWIRE PACKAGE HAS BEEN INSTALLED IN THE RELEASE IMAGES**
 
 **NOTE: THE PACKAGE REPOSITORY DOES NOT WORK IN CHINA**
 
@@ -24,37 +9,33 @@ Users inside China can download and install the package like this:
 ( 中国境内的用户可以像这样下载并安装软件包 )
 
 ```
-wget -O skywire_0.3.0-1_arm64.deb https://github.com/Skyfleet/armbian/blob/master/pool/main/s/skywire/skywire_0.3.0-1_arm64.deb?raw=true
-dpkg -i skywire_0.3.0-1_arm64.deb
+wget -O skywire_0.3.0-1_arm64.deb https://github.com/Skyfleet/armbian/blob/master/pool/main/s/skywire/skywire_0.3.0-2_arm64.deb?raw=true
+dpkg -i skywire_0.3.0-2_arm64.deb
 ```
+
+If you recieve an error about missing dependancies, try using the `--ignore-depends` flag with dpkg
+
+( 如果收到关于缺少依赖项的错误，请尝试在dpkg中使用`--ignore-depends`标志 )
 
 Remember, you will not have access to automatic updates
 
 ( 请记住，您将无权访问自动更新 )
 
-[This Repository](https://skyfleet.github.io/armbian) acts as a debian package repository which can be used to install skywire on .deb based systems of supported architectures (amd64 arm64 armhf)
+
+[This Repository](https://the-skycoin-project.github.io/deb) acts as a debian package repository which can be used to install skywire on .deb based systems of supported architectures (Currently: amd64 arm64 armhf)
 
 These packages are updated as new upstream versions are released.
 
-## CURRENT PACKAGE RELEASE NOTES
-
-###Version: 0.3.0
-
-The 0.3.0 release has changed the config file format; the old format and any existing configuration files will not work with the new visor version. See [this issue](https://github.com/skycoin/skywire/issues/564).
-
-It is recommended to regenerate the configuration files and then edit them; adding the hypervisor key as specified in [the readme of skywire-mainnet](https://github.com/skycoin/skywire).
-
-**PLEASE DO NOT DO THE FOLLOWING STEPS IF YOU ARE USING A RELEASE IMAGE**
+## [CURRENT PACKAGE MINOR RELEASE NOTES](/NOTE.md)
 
 ## To Use This Package Repository (with an existing debian system) -
 
 **ALL COMMANDS SHOULD BE RUN AS ROOT OR WITH SUDO**
 
 ### 1) Add this repository to your apt sources
-
 (as root or use sudo):
 ```
-add-apt-repository 'deb http://skyfleet.github.io/armbian sid main'
+add-apt-repository 'deb http://the-skycoin-project.github.io/deb sid main'
 ```
 
 If `add-apt-repository` is not be available, install it with `apt install software-properties-common`
@@ -65,95 +46,75 @@ nano /etc/apt/sources.list
 
 Add the following:
 ```
-deb http://skyfleet.github.io/armbian sid main
-# deb-src http://skyfleet.github.io/armbian sid main
+deb http://the-skycoin-project.github.io/deb sid main
+#deb-src http://the-skycoin-project.github.io/deb sid main
 ```
 
 ### 2) Add the repository signing key
-
 as root:
 ```
-curl -L http://skyfleet.github.io/armbian/KEY.asc | apt-key add -
+curl -L http://the-skycoin-project.github.io/deb/KEY.asc | apt-key add -
 ```
 with sudo this would be:
 ```
-curl -L http://skyfleet.github.io/armbian/KEY.asc | sudo apt-key add -
+curl -L http://the-skycoin-project.github.io/deb/KEY.asc | sudo apt-key add -
 ```
 
 ### 3) Resync the package database:
+(as root or use sudo)
 ```
 apt update
 ```
 
-### 4) Install skywire (as root or use sudo):
+### 4) Install skywire:
+(as root or use sudo)
 ```
 apt install skywire
 ```
 
-### 5) Configure skywire (as root or use sudo):
-
-At the point you have completed step 4 (or if you are using a release image) skywire is installed.
-
-**However**, you must still create and edit the skywire-hypervisor and skywire-visor .json files
-
-These files **must** be at the following paths for the included skywire-visor and skywire-hypervisor systemd services to work.
+**PLEASE NOTE THIS MAY FAIL ON RASPBIAN DUE TO NOT HAVING THE REPREPRO DEPENDANCY AVAILABLE**
+If this is the case, install with --nodeps
+(as root or use sudo)
 ```
-/etc/skywire-hypervisor.json
-/etc/skywire-visor.json
+apt install --nodeps skywire
 ```
 
-Please follow the documentation [in the readme of skywire-mainnet](https://github.com/skycoin/skywire)
-or ask in [the skywire telegram channel](https://t.me/skywire)
 
-A brief example of genrating a hypervisor and visor configuration and setting the hypervisor public key is as follows:
-```
-#generate the hypervisor config:
-sudo skywire-hypervisor gen-config -ro /etc/skywire-hypervisor.json
-#generate the visor config
-sudo skywire-cli visor gen-config -ro /etc/skywire-visor.json
-#copy the hypervisor key; to print the file into the terminal use the following command:
-cat /etc/skywire-hypervisor.json
-#edit the visor's config and add the hypervisor key as it says in the readme for skywire
-sudo nano /etc/skywire-visor.json
-```
 
-When you have completed the configuration, start the hypervisor and/or visor systemd service:
+
+At the point you have completed the above, skywire should be running. The output of the package installation should provide a link to the hypervisor UI where you an check it in your web browser.
+
+### 5) Configuring additional visors
+**PLEASE NOTE THIS MAY NOT WORK FULLY ON RASPBIAN, PLEASE REFER TO THE ALTERNATIVE METHODS**
+
+Generate the distributable hypervisor public key package
+(as root or use sudo)
 ```
-sudo systemctl start skywire-hypervisor
-sudo systemctl start skywire-visor
+keypkg-gen
 ```
 
-Then, view the hypervisor's web interface to make sure everything worked.
+You will be prompted to configure a repository on the remote machines like was done in step 1
 
-**PLEASE NOTE:** the above configuration steps represent only part of the configuration that is created by skyimager. Please refer to the [skybian](https://github.com/skycoin/skybian) repository and / or the skywire wiki for additional information on this configuration.
+**Don't forget to configure this repository including adding the key** on the remote machines as well so that they are able to install skywire also.
 
-**Update Tip**
-To more easily manage skywire via systemd you can add the following to your `~/.bashrc` or `/etc/profile`
+After you have completed the prompt and steps 1, 2, and 3 on this page, you may then install the `hypervisorkey` package on the remote machines (as root or use sudo):
 ```
-##skywire mnagement
-alias startvis='sudo systemctl start skywire-visor'
-alias stopvis='sudo systemctl stop skywire-visor'
-alias starthvis='sudo systemctl start skywire-hypervisor'
-alias stophvis='sudo systemctl stop skywire-hypervisor'
+apt install hypervisorkey
 ```
-then you can turn the visor on or off with `startvis` or `stopvis`
 
-**Testing Tip**
-The easiest way to tell if skywire is working correctly is to start the visor __manually__ in the terminal. To do this, first symlink the skwire apps directory into your home folder
-```
-sudo ln -s /usr/bin/apps ~/
-```
-Then you can start a visor manually with:
-```
-sudo skywire-visor /etc/skywire-visor.json
-```
-(Be sure to start the visor via systemd for normal use)
+Skywire will be installed as a dependancy of this package and the new visor should appear in your hypervisor UI at the point the command has completed
+
+### Alternative methods
+
+**if for some reason step 4 does not work** or if you have difficulty, forgo the local apt repository and copy the built hypervisorkey .deb package from `/opt/skywire/pkgcache` to `/opt/skywire/apt/repo` and then run `readonlycache` or start the `readonly-cache` systemd service. The contents of `/opt/skywire/apt/repo` are made available on port :8079 of the local host. Fetch this package to the other SBCs using wget or your preferred method and install with `dpkg -i`
+
+Another alternative would be to copy the built hypervisorkey package along with the skywire package to a USB drive. Mount the drive on the SBCs and install skywire first, then install the hypervisorkey package.
 
 ### 5) Updating your system and the skywire installation.
-**PLEASE DO NOT USE THE UPDATE BUTTON IN THE HYPERVISOR UI**
-**PLEASE DO NOT USE THE UPDATE BUTTON IN THE HYPERVISOR UI**
+**PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
+**PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
 
-as root:
+Any new version of packages which are added to repositories you have configured in your apt sources will be installed with the following commands (as root or use sudo):
 ```
 apt update
 apt upgrade
@@ -161,4 +122,4 @@ apt upgrade
 
 Additionally, refer to the notes on the current skywire release at the beginning of this document for details on any manual intervention which is necessary for updates to work. And remember:
 
-**PLEASE DO NOT USE THE UPDATE BUTTON IN THE HYPERVISOR UI**
+**PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**

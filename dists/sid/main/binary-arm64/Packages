@@ -1,14 +1,14 @@
 Package: skywire
-Version: 0.3.0-1
+Version: 0.3.0-2
 Architecture: arm64
-Depends: 
-Maintainer: Skyfleet
+Depends: reprepro
+Maintainer: github.com/the-skycoin-project
 Priority: optional
 Section: web
-Filename: pool/main/s/skywire/skywire_0.3.0-1_arm64.deb
-Size: 34272932
-SHA256: f0f1e9baf940d44a95eac06d0cb538a2a25e13c05a1070fde9eb15f03ba022ae
-SHA1: 651f8cda7885502e20c3d75e1ca45748d00fc861
-MD5sum: 2e0ee351ae01f003a655a2ec6605c851
-Description: Skywire: Building a New Internet. Skycoin.com
+Filename: pool/main/s/skywire/skywire_0.3.0-2_arm64.deb
+Size: 60227984
+SHA256: 4a95fdd6faa9f07983e650a8c1f258a3131ff255a1403fc1a411a1bb7a533523
+SHA1: fd49bedc8634dc6de2cae39e41b79efd2cbaee12
+MD5sum: 81e65e1870a1fc8e2a08354cf7726b72
+Description: Skywire Mainnet Node implementation. Develop Banch. Debian package
 
