@@ -11,12 +11,12 @@ echo -e "making repo for debian $_debian_codename. Architecture: $_packagearchit
 [[ ! -d "conf" ]] && mkdir conf
 
 echo "creating repo configuration file"
-echo "Origin: localhost" > conf/distributions
-echo "Label: localhost" >> conf/distributions
+echo "Origin: the-skycoin-project" > conf/distributions
+echo "Label: the-skycoin-project" >> conf/distributions
 echo "Codename: $_debian_codename" >> conf/distributions
 echo "Architectures: $_packagearchitecture" >> conf/distributions
 echo "Components: main" >> conf/distributions
-echo "Description: lorem ipsum dolor sit amet!" >> conf/distributions
+echo "Description: the-skycoin-project debian package repository" >> conf/distributions
 echo "SignWith: $_signwith" >> conf/distributions
 echo "Creating debian package repo"
 set -e pipefail

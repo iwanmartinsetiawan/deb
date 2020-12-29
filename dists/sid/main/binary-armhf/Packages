@@ -1,0 +1,14 @@
+Package: skywire
+Version: 0.3.0-3
+Architecture: armhf
+Depends: reprepro
+Maintainer: github.com/the-skycoin-project
+Priority: optional
+Section: web
+Filename: pool/main/s/skywire/skywire_0.3.0-3_armhf.deb
+Size: 59124384
+SHA256: f243ef916f21fcf3afbb2ec36d9ad5493c6a673497c93f3835ac0900fa28da5d
+SHA1: 59e89477368915355e9449110a4cace0277ecced
+MD5sum: 5f7197d5c2b8113a55f3b41c840e7f57
+Description: Skywire Mainnet Node implementation. Develop Banch. Debian package
+

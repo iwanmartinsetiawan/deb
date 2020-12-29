@@ -1,0 +1,5 @@
+Component: main
+Origin: the-skycoin-project
+Label: the-skycoin-project
+Architecture: s390x
+Description: the-skycoin-project debian package repository
