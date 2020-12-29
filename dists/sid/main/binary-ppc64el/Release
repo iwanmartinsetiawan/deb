@@ -1,0 +1,5 @@
+Component: main
+Origin: the-skycoin-project
+Label: the-skycoin-project
+Architecture: ppc64el
+Description: the-skycoin-project debian package repository
