@@ -6,9 +6,9 @@ Maintainer: github.com/the-skycoin-project
 Priority: optional
 Section: web
 Filename: pool/main/s/skywire/skywire_0.3.0-3_amd64.deb
-Size: 61762632
-SHA256: 399c7ff9f378d39ea3e3c499f7ba5f2aa7a40a8f31bf1dc5ae48d97e9523d699
-SHA1: 158ccbd790f265f744d772bb6a2587eede605b9e
-MD5sum: 99c0c577b6ddda757d2333a4dba9754e
+Size: 14244284
+SHA256: 8a4066e72678b2c5ce915b9fcd39b3bb9d2dfd8ab3426b5b37444eaf45032db7
+SHA1: 059981aa24d520619a94c487601d39068c648b7a
+MD5sum: f75b871b14eb9f7ca90fda68915360b5
 Description: Skywire Mainnet Node implementation. Develop Banch. Debian package
 
