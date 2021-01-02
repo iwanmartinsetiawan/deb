@@ -9,8 +9,8 @@ Users inside China can download and install the package like this:
 ( 中国境内的用户可以像这样下载并安装软件包 )
 
 ```
-wget -O skywire_0.3.0-2_arm64.deb https://github.com/the-skycoin-project/deb/blob/master/pool/main/s/skywire/skywire_0.3.0-2_arm64.deb?raw=true
-dpkg -i skywire_0.3.0-2_arm64.deb
+wget -O skywire_0.3.0-3_arm64.deb https://github.com/the-skycoin-project/deb/blob/master/pool/main/s/skywire/skywire_0.3.0-3_arm64.deb?raw=true
+dpkg -i skywire_0.3.0-3_arm64.deb
 ```
 
 If you recieve an error about missing dependancies, try using the `--ignore-depends` flag with dpkg
@@ -79,9 +79,6 @@ If this is the case, install with --nodeps
 apt install --nodeps skywire
 ```
 
-
-
-
 At the point you have completed the above, skywire should be running. The output of the package installation should provide a link to the hypervisor UI where you an check it in your web browser.
 
 ### 5) Configuring additional visors
@@ -106,7 +103,7 @@ Skywire will be installed as a dependancy of this package and the new visor shou
 
 ### Alternative methods
 
-**if for some reason step 4 does not work** or if you have difficulty, forgo the local apt repository and copy the built hypervisorkey .deb package from `/opt/skywire/pkgcache` to `/opt/skywire/apt/repo` and then run `readonlycache` or start the `readonly-cache` systemd service. The contents of `/opt/skywire/apt/repo` are made available on port :8079 of the local host. Fetch this package to the other SBCs using wget or your preferred method and install with `dpkg -i`
+**if for some reason step 4 does not work** or if you have difficulty, forgo the local apt repository and copy the built hypervisorkey .deb package from `/opt/skywire/pkgcache` to `/opt/skywire/skycache` and then run `skycache` or start the `skycache` systemd service. The contents of `/opt/skywire/apt/repo` are made available on port :8079 of the local host. Fetch this package to the other SBCs using wget or your preferred method and install with `dpkg -i`
 
 Another alternative would be to copy the built hypervisorkey package along with the skywire package to a USB drive. Mount the drive on the SBCs and install skywire first, then install the hypervisorkey package.
 
