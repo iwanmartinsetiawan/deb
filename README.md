@@ -9,8 +9,8 @@ Users inside China can download and install the package like this:
 ( 中国境内的用户可以像这样下载并安装软件包 )
 
 ```
-wget -O skywire_0.3.0-3_arm64.deb https://github.com/the-skycoin-project/deb/blob/master/pool/main/s/skywire/skywire_0.3.0-3_arm64.deb?raw=true
-dpkg -i skywire_0.3.0-3_arm64.deb
+wget -O skywire_0.4.0-1_arm64.deb https://github.com/the-skycoin-project/deb/blob/master/pool/main/s/skywire/skywire_0.4.0-1_arm64.deb?raw=true
+dpkg -i skywire_0.4.0-1_arm64.deb
 ```
 
 If you recieve an error about missing dependancies, try using the `--ignore-depends` flag with dpkg
