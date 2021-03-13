@@ -1,3 +1,10 @@
+### skywire-bin Version: 0.4.0 Release: 1
+
+ The skywire 0.4.0 binary release has been added to the package repository.
+
+ This package release includes the autoconfiguration script `skywire-autoconfig` which is included in the skywire package; however due to the nature of a binary release package, I have not included the `skycache` package-cache server binary or the scripts which rely on skycache. This includes the hypervisor key package generation and distribution method.
+
+Previous release notes
 
 ### Version: 0.3.0 Release: 2
 

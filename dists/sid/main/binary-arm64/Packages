@@ -12,3 +12,17 @@ SHA1: 2301e7dbe03dce1b952bf3afb7cc8f56a931050c
 MD5sum: 5a849aca74b65724cd665bd2b04fa562
 Description: Skywire Mainnet Node implementation. Develop Banch. Debian package
 
+Package: skywire-bin
+Version: 0.4.0-1
+Architecture: arm64
+Depends: reprepro
+Maintainer: github.com/the-skycoin-project
+Priority: optional
+Section: web
+Filename: pool/main/s/skywire-bin/skywire-bin_0.4.0-1_arm64.deb
+Size: 9475600
+SHA256: 000d2f146d50add2b0af4101a539c52e7a0af60355132f7f3bf1278d17326535
+SHA1: 0f782a50065562f474af2950eedf926fab1d09db
+MD5sum: 6d80ef53af1b8e9327754b651fe6c37c
+Description: Skywire Mainnet Node implementation. Binary Release. Debian package
+
