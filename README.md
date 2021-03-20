@@ -109,7 +109,7 @@ At the point you have completed the above, skywire should be running. The output
 
 ### 5) Configuring additional visors
 
-This process is undergoing revision. Automation for thi is not present in the binary release package. A rough sketch of the process is included in the following script which takes one argument - the remote hypervisor key that you want to set on the visor.
+This process is undergoing revision. Automation for this is not present in the binary release package. A rough sketch of the process is included in the following script which takes one argument - the remote hypervisor key that you want to set on the visor.
 ```
 #!/bin/bash
 
