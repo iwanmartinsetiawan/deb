@@ -8,9 +8,17 @@ Users inside China can download and install the package like this:
 
 ( 中国境内的用户可以像这样下载并安装软件包 )
 
+For ARM64
 ```
-wget -O skywire_0.4.0-1_arm64.deb https://github.com/the-skycoin-project/deb/blob/master/pool/main/s/skywire/skywire_0.4.0-1_arm64.deb?raw=true
+wget -O skywire_0.4.0-1_arm64.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.0-1_arm64.deb
 dpkg -i skywire_0.4.0-1_arm64.deb
+```
+
+For ARMHF
+https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.0-1_armhf.deb
+```
+wget -O skywire-bin_0.4.0-1_armhf.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.0-1_armhf.deb
+dpkg -i skywire-bin_0.4.0-1_armhf.deb
 ```
 
 If you recieve an error about missing dependancies, try using the `--ignore-depends` flag with dpkg
@@ -69,8 +77,10 @@ apt update
 ### 4) Install skywire:
 (as root or use sudo)
 ```
-apt install skywire
+apt install skywire-bin
 ```
+
+provided is the packaged binary release of skywire, latest version
 
 **PLEASE NOTE THIS MAY FAIL ON RASPBIAN DUE TO NOT HAVING THE REPREPRO DEPENDANCY AVAILABLE**
 If this is the case, install with --nodeps
@@ -82,32 +92,11 @@ apt install --nodeps skywire
 At the point you have completed the above, skywire should be running. The output of the package installation should provide a link to the hypervisor UI where you an check it in your web browser.
 
 ### 5) Configuring additional visors
-**PLEASE NOTE THIS MAY NOT WORK FULLY ON RASPBIAN, PLEASE REFER TO THE ALTERNATIVE METHODS**
 
-Generate the distributable hypervisor public key package
-(as root or use sudo)
-```
-keypkg-gen
-```
+Section undergoing revision
 
-You will be prompted to configure a repository on the remote machines like was done in step 1
 
-**Don't forget to configure this repository including adding the key** on the remote machines as well so that they are able to install skywire also.
-
-After you have completed the prompt and steps 1, 2, and 3 on this page, you may then install the `hypervisorkey` package on the remote machines (as root or use sudo):
-```
-apt install hypervisorkey
-```
-
-Skywire will be installed as a dependancy of this package and the new visor should appear in your hypervisor UI at the point the command has completed
-
-### Alternative methods
-
-**if for some reason step 4 does not work** or if you have difficulty, forgo the local apt repository and copy the built hypervisorkey .deb package from `/opt/skywire/pkgcache` to `/opt/skywire/skycache` and then run `skycache` or start the `skycache` systemd service. The contents of `/opt/skywire/apt/repo` are made available on port :8079 of the local host. Fetch this package to the other SBCs using wget or your preferred method and install with `dpkg -i`
-
-Another alternative would be to copy the built hypervisorkey package along with the skywire package to a USB drive. Mount the drive on the SBCs and install skywire first, then install the hypervisorkey package.
-
-### 5) Updating your system and the skywire installation.
+### 6) Updating your system and the skywire installation.
 **PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
 **PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
 
