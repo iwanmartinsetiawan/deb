@@ -1,3 +1,12 @@
+<!-- MarkdownTOC levels="1,2,3,4,5" autolink="true" bracket="round" -->
+[1 - Repository Configurtion](#1-add-this-repository-to-your-apt-sources)
+[2 - Add Repo Signing Key](#2-add-the-repository-signing-key)
+[3 - Sync Package Database](#3-resync-the-package-database)
+[4 - Install Skywire](#4-install-skywire)
+[5 - Configure Additional Visors](#5-configuring-additional-visors)
+[6 - Updating Your System And The Skywire Installation](#6-updating-your-system-and-the-skywire-installation)
+
+
 ## Package Repository
 
 
