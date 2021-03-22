@@ -115,45 +115,12 @@ At the point you have completed the above, skywire should be running. The output
 
 ### 5) Configuring additional visors
 
-This process is undergoing revision. Automation for this is not present in the binary release package. A rough sketch of the process is included in the following script which takes one argument - the remote hypervisor key that you want to set on the visor.
+the following script included with the package accepts one argument - the remote hypervisor key
 ```
-#!/bin/bash
-
-[[ -z $1 ]] && echo "please specify hypervior key as argument" && exit || _hvk=$1
-
-#stopping any running instance of skywire
-systemctl disable --now skywire.service
-systemctl disable --now skywire-visor.service
-
-#config generation writes in the current dir;
-#so we want to make anything spawned by the process appear as a subdirectory of install dir
-cd /opt/skywire
-
-if [[ -f /opt/skywire/skywire-visor.json ]] ; then #try to reuse any existing visor config
-cp -b /opt/skywire/skywire-visor.json /opt/skywire/skywire-visor.json.gen
-else
-if [[ -f /opt/skywire/skywire.json ]] ; then #use hypervisor config
-cp -b /opt/skywire/skywire.json /opt/skywire/skywire-visor.json.gen
-else  #error here
-echo "expected visor or hypervisor configuration file not found!"
-echo "there is a problem with the expected skywire configuration which requires manual intervenion."
-exit 100
-fi
-fi
-
-#generate visor configuration
-echo "Setting hypervisors:"
-echo "${_hvk}"
-if [[ $(skywire-cli visor gen-config --hypervisor-pks $_hvk -p -r -o /opt/skywire/skywire-visor.json.gen) ]]; then
-  echo "Generated skywire visor configuration!"
-else
-  echo ">>> FATAL: skywire not installed or installation not detected! Could not generate configuration file!"
-  echo "this should never happen"
-  exit 100
-fi
-mv /opt/skywire/skywire-visor.json.gen /opt/skywire/skywire-visor.json
-systemctl enable --now skywire-visor.service
+skywire-hypervisorkey <remote-hypervisor-key>
 ```
+
+remember to substituite a public key in the command above
 
 ### 6) Updating your system and the skywire installation.
 **PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
