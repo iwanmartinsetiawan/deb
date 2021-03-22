@@ -26,21 +26,27 @@ Users inside China can download and install the package like this:
 
 ( 中国境内的用户可以像这样下载并安装软件包 )
 
-For ARM64 https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.0-1_arm64.deb
+( 从下面的选项中选择与目标计算机的体系结构相对应的软件包的适当体系结构。 从您要在其上安装skywire的计算机的SSH会话或终端中执行以下命令 )
+
+用于橙色pi ARM64
+For ARM64 https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-1_arm64.deb
 ```
-wget -O skywire_0.4.0-1_arm64.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.0-1_arm64.deb
-dpkg -i skywire_0.4.0-1_arm64.deb
+wget -O skywire_0.4.1-1_arm64.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-1_arm64.deb
+dpkg -i skywire_0.4.1-1_arm64.deb
 ```
 
+
+用于树莓派ARMHF
 For ARMHF
-https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.0-1_armhf.deb
+https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-1_armhf.deb
 ```
-wget -O skywire-bin_0.4.0-1_armhf.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.0-1_armhf.deb
-dpkg -i skywire-bin_0.4.0-1_armhf.deb
+wget -O skywire-bin_0.4.1-1_armhf.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-1_armhf.deb
+dpkg -i skywire-bin_0.4.1-1_armhf.deb
 ```
 
+用于台式机AMD64 
 For AMD64
-https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.0-1_arm64.deb
+https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-1_arm64.deb
 ```
 wget -O skywire-bin_0.4.0-1_arm64.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.0-1_arm64.deb
 dpkg -i skywire-bin_0.4.0-1_arm64.deb
