@@ -1,7 +1,7 @@
 Origin: the-skycoin-project
 Label: the-skycoin-project
 Codename: sid
-Date: Mon, 22 Mar 2021 21:39:48 UTC
+Date: Wed, 24 Mar 2021 20:54:34 UTC
 Architectures: amd64 arm64 armhf armel i386 mips mipsel mips64el ppc64el riscv64 s390x
 Components: main
 Description: the-skycoin-project debian package repository

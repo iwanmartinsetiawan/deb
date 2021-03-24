@@ -4,7 +4,7 @@ Hash: SHA256
 Origin: the-skycoin-project
 Label: the-skycoin-project
 Codename: sid
-Date: Mon, 22 Mar 2021 21:39:48 UTC
+Date: Wed, 24 Mar 2021 20:54:34 UTC
 Architectures: amd64 arm64 armhf armel i386 mips mipsel mips64el ppc64el riscv64 s390x
 Components: main
 Description: the-skycoin-project debian package repository
@@ -112,17 +112,17 @@ SHA256:
  7f2867df87760b8c63d2a8c7f17ea278c78cefe288f7fdfed489ca8e0ef60e82 150 main/binary-s390x/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEE3gj5JO7pODLavGQsqNx2GxwMDPwFAmBZDqQACgkQqNx2GxwM
-DPzERQ//VdBeMCv8jQfcVMMDIllF14CCz2DqHnSx2RQaLocBRhGrtXgptv8IuJki
-y/FA+Dz+fROstu3zYOHhUVaO7lbHVZ3GafIIhsINsRPf41rkNgfb7gu406ZxRj59
-JB1jO2wWg5NVq5pYR3XnTmMGSLVuC1cu9MUBcmBh/JWPB6oNGOhSoJ/rJ0fvZrrD
-z3qQBOdHQvIY5Cw4LbCMRMWFKCo4HYestfNKq06DypeTEFjW39DzbiwpgNXXed9Y
-s8ZhCRE/s6BgcwfIQS/Tad2IxbtSJvhR5gn8246+nF0VpERBzGVaqV9zXb96L0Hk
-7cCiE/harvg6I1yAWAh7PeaihThXlY9AY/Fk8U5lgwjBetye7o8ZTItl4iX3wyfU
-a85rRV7bDfMwaPmCvNA00NyqbMFDMFLRT32FKSNgH5161pDlcwnid22G4wlF0udo
-oq+Bg8j02q9loO5L15Bnb9OERJHWTQoPImu/epFDJl4HOa3ql9KTs1cnKUzYjpl8
-UtstEoXnSFUTJ/+ULMtdso2SSTPWlTWEYcUj6gxq59jEquIAaIF1RMdzA/U9CGEU
-B+L4xlLnBSr4OCWDbV27sO3TMokhI/KBuwdQnBqhLzvFEaPMV/w7AEuYSPjon3Pz
-1ITP7n+e5YUktbL1beRuXV9hZS3ggr3TNFWZ29rX2E/AwKGp7iE=
-=v8Pm
+iQIzBAEBCAAdFiEE3gj5JO7pODLavGQsqNx2GxwMDPwFAmBbpwsACgkQqNx2GxwM
+DPylnBAAg3QwAGcL37LCe82vsgGLLHw0dv8oKJuSzaaF6xsmkfZrLxchyrgQ5dv4
+AIATq+wRCcuH2Yy7rfkjCS7ssiDTBwle/HIB+HY4K+bdYcOz1Y/7pF7lfr3AdTiu
+PNOxW4/SvjxPk/ba17QQNUAUJgB2+Iujav77gsLWgDZ0sYxIrY7AbrueU5c8cJpg
+ctexgCX/tJT9cbqL5rIXkhTDpcPCb8PGWI83u6mqlibQxkM3SgYlGaSWkW2dwFPd
+xNjLtb+p6VQ75CiHxv2D015So3aZMGR+vnKoF1dKswHymrow8z2OoHwQ4BpL68rp
+7G0uJwCSialbuvh7yCu6DyAqRXRYWurd7vjmgiRXK99mq+7YcCMj8QzoSkxHlHUk
+b0G2JWEN1g6EA+YotmhyRC0c816nQCa89eq6BL12dIIqT3I2sAxHaMv8h7GOzL4l
+HqKOb+xUQrajqnyyMJNtdQRiCcnylxRW61qCd2grMYuOVhdsELSpXt0awARlY/fw
+R7MAmxSgXaIkscJuS79EitMMbdh0T7PrYGgKiFfLz3xJcrk8+hMZctGbCm9r1iaC
+14hf2Jq8PjPKoOMSOgNG16yzS8MrdP5JQAkWu/DkszeT5xZvzl5vdT5qTgTx9gxT
+Uqu0QrSyEN+5xmUsukHevMKfusC220HJhnnPE9D860gTLq0/edo=
+=eKpb
 -----END PGP SIGNATURE-----
