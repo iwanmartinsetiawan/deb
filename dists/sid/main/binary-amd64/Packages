@@ -14,16 +14,16 @@ MD5sum: 53f2b9e5e10cca03918be32eccd8e9eb
 Description: Skycoin Cryptocurrency Wallet; Binary Release. Debian packages.
 
 Package: skywire-bin
-Version: 0.4.1-3
+Version: 0.4.1-4
 Architecture: amd64
 Depends: reprepro
 Maintainer: github.com/the-skycoin-project
 Priority: optional
 Section: web
-Filename: pool/main/s/skywire-bin/skywire-bin_0.4.1-3_amd64.deb
-Size: 10388960
-SHA256: c8cbf951ae75d7b8d56c1e58cd3754341a858646ddf1bd3572c530441447464f
-SHA1: a05f23dc3d4d7ee8068856ec8d1197346c2a4c19
-MD5sum: bbf6ca02d175ea221653b5cec246496c
+Filename: pool/main/s/skywire-bin/skywire-bin_0.4.1-4_amd64.deb
+Size: 10385240
+SHA256: b3e038e8f3b5e791f0948222c5fcb518330f9d5af3159de8ed91a76397b457c0
+SHA1: 7e602e37353b6a9c29763d7c9d42dcfdc85c734c
+MD5sum: 0ff32d4350a0c73dccb1e7bd6d22f849
 Description: Skywire Mainnet Node implementation. Binary Release. Debian package
 
