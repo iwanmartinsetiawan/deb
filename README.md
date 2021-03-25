@@ -6,6 +6,8 @@
 - [5 - Configure Additional Visors](#5-configuring-additional-visors)
 - [6 - Updating Your System And The Skywire Installation](#6-updating-your-system-and-the-skywire-installation)
 
+ [PACKAGE RELEASE NOTES](/NOTE.md)
+
 
 ## Package Repository
 
@@ -44,7 +46,7 @@ wget -O skywire-bin_0.4.1-1_armhf.deb https://github.com/the-skycoin-project/deb
 dpkg -i skywire-bin_0.4.1-1_armhf.deb
 ```
 
-用于台式机AMD64 
+用于台式机AMD64
 For AMD64
 https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-1_arm64.deb
 ```
@@ -61,7 +63,6 @@ Remember, you will not have access to automatic updates
 ( 请记住，您将无权访问自动更新 )
 
 
-### [CURRENT PACKAGE MINOR RELEASE NOTES](/NOTE.md)
 
 
 ## To Use This Package Repository (with any existing deb system) -

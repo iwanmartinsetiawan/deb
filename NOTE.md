@@ -1,12 +1,44 @@
-### skywire-bin Version: 0.4.0 Release: 1
+## Build System and Sources:
+
+The build of the .deb packages contained in [this repo](https://github.com/the-skycoin-project/deb) uses `makepkg` (provided by `pacman`) and can be preformed on any [Archlinux](https://archlinux.org) system or Arch-flavored OS such as [EndeavourOS](https://endeavouros.com/).
+
+The build sources for the .deb packages are kept most updated in the archlinux [AUR](https://aur.archlinux.org) repository for the corresponding package.
+
+The pre-compiled binaries included in the packages noted as binary releases are sourced from [https://gihub.com/skycoin](https://gihub.com/skycoin) or [https://skycoin.com](https://skycoin.com)
+
+The packages in this repository have minimal makedependencies; however, they do require `dpkg` be installed on the Archlinux system, which is available from the AUR.
+
+A more flexible system using docker containers and the aforementioned system to build these packages is in development.
+
+## skywire-bin Version: 0.4.1 Release: 2
+
+This minor revision fixes the skywire-autoconfig script that was changed during the previous revision and initial move to 0.4.0.
+
+The satellite packages have been eliminated due to the complexity being greater than the reliability.
+
+As an alternative, a script for setting the hypervisor key on the intended visor after installation of skywire has been provided. `skywire-hypervisorkey` takes one argument; the intended key of the hypervisor.
+
+PLEASE NOTE:
+As a revised summary of the process; when skywire is installed from this repository, the `skywire-autoconfig` script called by the postinstall script included with the package will configure automatically a running hypervisor instance (a visor which is it's own hypervisor). By default this will happen. From that point, running `skywire-hypervisorkey` and providing as an argument the desired hypervisor public key, a new configuration is generated from the existing one and the skywire-visor systemd service is enabled after the skywire systemd service is halted. These two systemd services each refer to a dedicated configuration file that must exist for the systemd service to work.
+
+Additional measures have also been take to ensure that a residual skywire installation (such as that which may be found in a preconfigured image) is overwritten with redundant symlinks to the skywire installation provided by the package. The old configuration .json files are not touched. 
+
+## skycoin binary release Version: 0.27.1 Release: 1
+
+The skycoin binary release version 0.27.1  has been added to this package repository
+
+Previous release notes:
+## skywire-bin Version: 0.4.1 Release: 1
+Increment package version
+
+## skywire-bin Version: 0.4.0 Release: 1
 
  The skywire 0.4.0 binary release has been added to the package repository.
 
  This package release includes the autoconfiguration script `skywire-autoconfig` which is included in the skywire package; however due to the nature of a binary release package, I have not included the `skycache` package-cache server binary or the scripts which rely on skycache. This includes the hypervisor key package generation and distribution method.
 
-Previous release notes
 
-### Version: 0.3.0 Release: 2
+## Version: 0.3.0 Release: 2
 
 This release has been statically compiled using `musl`
 
