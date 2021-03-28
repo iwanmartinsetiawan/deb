@@ -5,7 +5,7 @@
 - [4 - Install Skywire](#4-install-skywire)
 - [5 - Configure Additional Visors](#5-configuring-additional-visors)
 - [6 - Updating Your System And The Skywire Installation](#6-updating-your-system-and-the-skywire-installation)
-- [Manual Download / instalation and Instructions for users in China - 中国境内用户使用说明 ](users-in-china)
+- [Manual Download / instalation and Instructions for users in China - 中国境内用户使用说明 ](#users-in-china)
 
  [PACKAGE RELEASE NOTES](/NOTE.md)
 
