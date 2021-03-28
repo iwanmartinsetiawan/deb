@@ -62,8 +62,9 @@ apt install skywire-bin
 
 provided is the packaged binary release of skywire, latest version
 
-
 At the point you have completed the above, skywire should be running. The output of the package installation should provide a link to the hypervisor UI where you an check it in your web browser.
+
+If you have difficulty with configuring this repository, you may attempt [manually downloading and installing the package](#users-in-china)
 
 ### 5) Configuring additional visors
 
