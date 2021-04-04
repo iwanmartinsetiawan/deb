@@ -16,6 +16,7 @@ These packages are updated as new upstream versions are released.
 
 Users are encouraged to configure [this package repository](https://the-skycoin-project.github.io/deb) in their APT sources in order to have access to updated versions of the software packages in this repo.
 
+
 ## To Use This Package Repository (with any existing deb system) -
 
 **ALL COMMANDS SHOULD BE RUN AS ROOT OR WITH SUDO**
@@ -77,6 +78,7 @@ remember to substituite a public key in the command above
 
 ### 6) Updating your system and the skywire installation.
 **PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
+
 **PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
 
 Any new version of packages which are added to repositories you have configured in your apt sources will be installed with the following commands (as root or use sudo):
@@ -88,6 +90,18 @@ apt upgrade
 Additionally, refer to the notes on the current skywire release at the beginning of this document for details on any manual intervention which is necessary for updates to work. And remember:
 
 **PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
+
+
+## A note on armv6 - Raspberry Pi Zero
+
+the armv6 architecture code on debian is the same one used for armv7, until this conflict can be resolved, the release for armv6 architecture is included in the release section of this repository at the given link:
+
+https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin-armv6-0.4.1-5-armhf.deb
+and can be installed manually as follows:
+```
+wget -O skywire-bin-armv6-0.4.1-5-armhf.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin-armv6-0.4.1-5-armhf.deb
+dpkg -i skywire-bin-armv6-0.4.1-5-armhf.deb
+```
 
 
 ### Users In China
@@ -126,6 +140,13 @@ https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin
 ```
 wget -O skywire-bin_0.4.1-4_amd64.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-4_amd64.deb
 dpkg -i skywire-bin_0.4.1-4_amd64.deb
+```
+
+用于树莓派ARMHF - armv6 raspberry pi zero
+https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin-armv6-0.4.1-5-armhf.deb
+```
+wget -O skywire-bin-armv6-0.4.1-5-armhf.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin-armv6-0.4.1-5-armhf.deb
+dpkg -i skywire-bin-armv6-0.4.1-5-armhf.deb
 ```
 
 If you recieve an error about missing dependancies, try using the `--ignore-depends` flag with dpkg
