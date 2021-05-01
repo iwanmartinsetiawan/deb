@@ -79,8 +79,6 @@ remember to substituite a public key in the command above
 ### 6) Updating your system and the skywire installation.
 **PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
 
-**PLEASE DO NOT USE THE UPDATE BUTTON IN THE SKYWIRE UI**
-
 Any new version of packages which are added to repositories you have configured in your apt sources will be installed with the following commands (as root or use sudo):
 ```
 apt update
@@ -120,26 +118,26 @@ Users inside China can download and install the package like this:
 ( 从下面的选项中选择与目标计算机的体系结构相对应的软件包的适当体系结构。 从您要在其上安装skywire的计算机的SSH会话或终端中执行以下命令 )
 
 用于橙色pi ARM64
-For ARM64 https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-4_arm64.deb
+For ARM64 https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-5_arm64.deb
 ```
-wget -O skywire_0.4.1-4_arm64.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-4_arm64.deb
-dpkg -i skywire_0.4.1-4_arm64.deb
+wget -O skywire_0.4.1-5_arm64.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-5_arm64.deb
+dpkg -i skywire_0.4.1-5_arm64.deb
 ```
 
 用于树莓派ARMHF
 For ARMHF
-https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-4_armhf.deb
+https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-5_armhf.deb
 ```
-wget -O skywire-bin_0.4.1-4_armhf.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-4_armhf.deb
-dpkg -i skywire-bin_0.4.1-4_armhf.deb
+wget -O skywire-bin_0.4.1-5_armhf.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-5_armhf.deb
+dpkg -i skywire-bin_0.4.1-5_armhf.deb
 ```
 
 用于台式机AMD64
 For AMD64
-https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-4_amd64.deb
+https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-5_amd64.deb
 ```
-wget -O skywire-bin_0.4.1-4_amd64.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-4_amd64.deb
-dpkg -i skywire-bin_0.4.1-4_amd64.deb
+wget -O skywire-bin_0.4.1-5_amd64.deb https://github.com/the-skycoin-project/deb/releases/download/archive/skywire-bin_0.4.1-5_amd64.deb
+dpkg -i skywire-bin_0.4.1-5_amd64.deb
 ```
 
 用于树莓派ARMHF - armv6 raspberry pi zero
